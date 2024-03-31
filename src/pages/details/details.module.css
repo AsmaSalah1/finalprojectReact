@@ -1,0 +1,46 @@
+.dad {
+  display: flex;
+  margin-top: 15px;
+  flex-wrap: wrap !important;
+  gap: 5px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.cardk {
+  /* border-radius: 15px !important; */
+  border-top-left-radius: var(--bs-card-inner-border-radius);
+  border-top-right-radius: var(--bs-card-inner-border-radius);
+  width: 100% !important;
+  aspect-ratio: 1.1;
+}
+/* .card-img, .card-img-bottom, .card-img-top {
+} */
+._dad_y86mc_1 {
+  display: flex;
+  flex-wrap: wrap !important;
+}
+.textD {
+  text-decoration: none !important;
+height: 510px !important;
+}
+@media(max-width:660px){
+   .textD{
+        height: 400px !important;
+        width: 17rem !important;;
+    }
+    .cardk {
+
+      width: 100% !important;
+      aspect-ratio: 1.2;
+    }
+    .textD h3{
+    font-size: 26px;
+    }
+    .cardTitle{
+      font-size: 15px;
+    }
+    .textD .ll{
+      width: 166px !important;
+      height: 33px !important; 
+    font-size: 17px !important;   
+  margin: auto;}
+}

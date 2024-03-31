@@ -1,0 +1,104 @@
+
+/* .n{
+    border-bottom: 2px solid teal;
+    color: aqua;
+} */
+.containerr{
+    width: calc(100% - 3%) !important;
+}
+.svgCart{
+    width: 17px;
+}
+nav{
+    z-index: 9;
+}
+.ssss{
+    /* width: 20px;
+    height: 20px; */
+}
+.nav-link .active{
+    /* border-bottom: 2px solid teal !important;  */
+    text-decoration: underline !important;
+}
+.re {
+    background-color: rgba(var(--bs-tertiary-bg-rgb), var(--bs-bg-opacity)) !important;
+}
+.r{
+ 
+height: 60px;
+font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+font-size: 18px;
+font-weight: 500;
+position: sticky !important;
+width: 100%;
+}
+.fontWeight{
+    font-weight: 400;
+
+}
+.logo{
+    width: 87px;
+    height: 38px;
+    margin-right: 9px;
+    border: 1px solid rgb(24, 23, 23);
+    border-radius: 6px;
+    padding: 2px;
+}
+.welcome{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 18px;
+    font-weight: 500;    margin-right: 50px;
+}
+.welcomeUser{
+    font-size: 16px;
+    color: rgba(0, 0, 0, 0.747);
+}
+/* .navLIN{
+font-size: 19px !important;
+    background-color: #0069c7a8;
+
+}
+.burger{
+    width: 50px;
+    height: 52px;}
+    .hidden{
+        display: none;
+       
+    }
+    
+.show{
+    display: flex;
+}
+.svgg{
+    background: rgb(248, 248, 237);
+    display: flex;
+    justify-content: flex-end;
+} */
+
+    /* @media  (max-width: 992px) {
+        .hidden,.collapse,.navbar-expand-lg,._r_eaepi_11 .navbar .navbar-expand-lg .bg-body-tertiary ._hidden2_eaepi_37{
+            display:flex !important;
+        }
+        .navbar-nav .me-auto .mb-2 .mb-lg-0 .link{
+            display: none;
+        }
+        .collapse {
+            display: flex !important;
+              }
+              .r{
+                margin-bottom: 0px ;
+            }
+    } */
+/* .changFont  {
+    font-family: cursive !important;
+    font-size: 30px ;
+  
+    padding: var(--bs-nav-link-padding-y) var(--bs-nav-link-padding-x);
+    font-weight: var(--bs-nav-link-font-weight);
+    color: var(--bs-nav-link-color);
+    text-decoration: none;
+    background: 0 0;
+    border: 0;
+    transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out;
+} */

@@ -1,0 +1,159 @@
+.all {
+  display: flex;
+  margin-top: 10px;
+
+  flex-wrap: wrap;
+}
+.carts {
+  width: calc(75% - 30px);
+  padding: 0 30px;
+  /* display: flex;
+flex-direction: column; */
+}
+.cardBody1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.cardBody {
+  display: flex;
+  gap: 10px;
+
+  justify-content: space-between;
+  /* gap: 30px; */
+  border-top: 1px solid rgba(109, 108, 108, 0.5);
+  padding: 5px;
+  border-bottom: 1px solid rgba(95, 90, 90, 0.5);
+  overflow-x: auto;
+}
+.cardBody img {
+  width: 80px;
+  height: 80px;
+}
+.cardBody h6 {
+  width: 150px;
+}
+.columnLabels {
+  /* display: flex; */
+  /* justify-content: space-between; */
+  gap: 30px;
+}
+.title {
+  color: rgb(165, 164, 164);
+  font-family: initial;
+  /* font-weight: 500; */
+  font-size: 14px;
+}
+.rightDiv {
+  background-color: rgb(230, 230, 230);
+  height: 400px;
+  width: 327px;
+  /* /border-radius: 23px; */
+  box-shadow: 4px 4px 10px 4px rgb(221, 185, 185);
+  border: 1px solid #8d8c8c;
+  margin-top: 50px;
+  /* margin: auto; */
+  /* display: flex;
+flex-direction: column;
+align-items: center; */
+}
+.buttonRemove {
+  height: 35px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-top: 25px;
+}
+
+.nine {
+  margin-bottom: 20px;
+}
+.nine h2 {
+  text-align: center;
+  font-size: 50px;
+  text-transform: uppercase;
+  color: #222;
+  letter-spacing: 1px;
+  font-family: "Playfair Display", serif;
+  font-weight: 400;
+}
+.nine h2 span {
+  margin-top: 5px;
+  font-size: 15px;
+  color: #444;
+  word-spacing: 1px;
+  font-weight: normal;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  font-family: "Raleway", sans-serif;
+  font-weight: 500;
+
+  display: grid;
+  grid-template-columns: 1fr max-content 1fr;
+  grid-template-rows: 27px 0;
+  grid-gap: 20px;
+  align-items: center;
+}
+
+.nine h2 span:after,
+.nine h2 span:before {
+  content: " ";
+  display: block;
+  border-bottom: 1px solid #ccc;
+  border-top: 1px solid #ccc;
+  height: 5px;
+  background-color: #f8f8f8;
+}
+.svgCart {
+  width: 17px;
+}
+.svgg {
+  width: 19px;
+  height: 19px;
+  box-sizing: content-box;
+}
+.cardText {
+  font-weight: 500;
+  font-size: 17px;
+}
+.button1 {
+  border-radius: 7px;
+  border: rgb(255, 255, 255);
+  background-color: white;
+}
+.moeny {
+  border: 1px solid rgb(180, 177, 177);
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 10px 10px 10px;
+}
+.font {
+  color: #635f5f;
+}
+.button2 {
+  border-radius: 7px;
+  border: 1px solid rgb(224, 76, 76);
+  background-color: rgb(230, 230, 230);
+  width: 300px;
+  padding: 10px;
+  margin: 0 10px 10px 10px;
+}
+.noCart {
+  text-align: center;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  margin-top: 30px;
+}
+
+@media (max-width: 1187px) {
+  .carts {
+    width: calc(100% - 30px);
+  }
+  .rightDiv {
+
+    margin: auto;
+    margin-top: 30px;
+
+  }
+}

@@ -1,0 +1,27 @@
+body{
+    /* font-family: cursive !important; */
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+}
+.card-img, .card-img-bottom, .card-img-top{
+    width: 200px !important;
+}
+.card{
+    margin: auto;
+    align-items: center;
+    background: aliceblue;
+    margin-bottom: 10px;
+    box-shadow: #dfcfcf 7px 8px 10px;
+    
+}
+.card:hover{
+    transform: scale(1.05) ;
+        transition: transform 0.3s;
+
+}
+.row{
+    justify-content: center;
+}
+.col{
+    width: 90% !important;
+}

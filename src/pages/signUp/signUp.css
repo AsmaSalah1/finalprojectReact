@@ -1,0 +1,127 @@
+.alert-warning {
+    --bs-alert-color: var(--bs-warning-text-emphasis);
+    --bs-alert-bg:rgb(237 237 237 / 73%) !important;
+    --bs-alert-border-color: #66645f !important;
+    --bs-alert-link-color: var(--bs-warning-text-emphasis);
+    width: fit-content !important;
+}
+.bod {
+    margin:0;
+height: 110vh;
+    padding:0;
+    font-family: sans-serif;
+    background: linear-gradient(#b8b5b560, #d9dee4);
+    background-image: url('/src/back5.jpeg');
+
+    background-size: 100% ;
+    background-repeat: repeat;
+    background-attachment: scroll;
+    /* background: linear-gradient(#d6727260, #1f2020); */
+    /* background: linear-gradient(#14141460, #9ca5a5); */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  
+  .login-box {
+    /* position: absolute; */
+   margin-top: 20px;
+    width: 400px;
+    padding: 40px;
+    /* transform: translate(-50%, -50%); */
+    background: rgba(0,0,0,.5);
+    background-color: rgba(143, 138, 138, 0.73);
+    background-color: rgb(237 237 237 / 73%);
+    background-color: rgba(255, 255, 255, 0.795);
+    box-sizing: border-box;
+    box-shadow: 0 15px 25px rgba(0,0,0,.6);
+    border-radius: 10px;
+    animation: loginbox 2.4s  1;
+    /* animation-name: loginbox;
+animation-duration: 2.4s;
+animation-iteration-count: 1; */
+  }
+  
+ 
+  .login-box .user-box {
+    position: relative;
+  }
+  
+  .login-box .user-box input {
+    width: 100%;
+    padding: 10px 0;
+    font-size: 16px;
+    color: #fff;
+    color:   #3a3636;
+
+    margin-top: 25px;
+    margin-bottom: 38px;
+    border: none;
+    border-bottom: 1px solid #949292;
+    outline: none;
+    background: transparent;
+  }
+  .login-box .user-box label {
+    position: absolute;
+    top:0;
+    left: 0;
+    padding: 10px 0;
+    font-size: 18px;
+    color: #fff;
+    color:  #3a3636;
+    margin-top: -12px;
+
+    pointer-events: none;
+    transition: .5s;
+  }
+  
+  .login-box .user-box input:focus ~ label,
+  .login-box .user-box input:valid ~ label {
+    /* top: -20px; */
+    left: 0;
+    color: #656c6d;
+    font-size: 12px;
+  }
+  .s{
+    text-align: center;
+    margin: auto;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    margin-top: 26px;
+    border-radius: 10px;
+    align-items: center;
+    padding: 6px;
+    width: 140px;
+    box-shadow: 1px 1px 13px 4px rgb(174, 177, 179);
+    text-align: center;
+  }
+  
+  
+
+  
+  @keyframes   loginbox
+  {
+    from {
+      transform: translateY(110vh);
+
+    }
+  
+    to {
+      transform: translateY(0);
+
+    }
+  }
+ 
+  h2 span {
+    font-family: 'Bad Script', cursive;
+    color: #111;
+    animation: glowing 2s linear infinite;
+    
+  }
+
+  .s:hover{
+    background-color: grey;
+    color: rgb(255, 255, 255);
+  }

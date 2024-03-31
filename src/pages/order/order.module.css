@@ -1,0 +1,181 @@
+.body{  font-family: Georgia, 'Times New Roman', Times, serif;
+
+    background-color: #d8d8d81c;
+    background-image: url('/src/back5.jpeg');
+    background-size: 100% ;
+    background-repeat: repeat;
+    background-attachment: scroll;
+}
+.cardBody img{
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+    border: 1px  rgb(180, 158, 158) solid;Box-shadow: 3px 2px 9px 3px rgb(39, 39, 39);
+}
+.swiperr{
+    display: flex;
+    color: #fdfdfd;
+    flex-wrap: wrap;
+    overflow-x: auto;
+    flex-direction: row ;
+    justify-content: center;
+    gap: 29px;
+    width: fit-content;
+    margin: auto;
+    padding: 2px;
+    margin-top: 1px;
+    margin-bottom: 25px;
+    /* border-top: 1px solid gray ;
+    border-bottom: 1px solid gray ;
+border-left: 1px solid rgba(128, 128, 128, 0.235);
+border-right: 1px solid rgba(128, 128, 128, 0.233); */
+
+    background-color: rgba(185, 185, 185, 0.041);
+}
+.cardBody1{
+    display: flex;
+justify-content: center;}
+
+.nine{
+    color: white !important;
+
+    margin-bottom: 20px;
+}
+.nine h3 {
+    color: white !important;
+
+    text-align:center; font-size:50px; text-transform:uppercase; color:#222; letter-spacing:1px;
+    font-family:"Playfair Display", serif; font-weight:400;
+  }
+  .nine h3 span {
+    color: white;
+    margin-top: 5px;
+      font-size:15px;
+       word-spacing:1px; font-weight:normal; letter-spacing:2px;
+      text-transform: uppercase; font-family:"Raleway", sans-serif; font-weight:500;
+  
+      display: grid;
+      grid-template-columns: 1fr max-content 1fr;
+      grid-template-rows: 27px 0;
+      grid-gap: 20px;
+      align-items: center;
+  }
+  
+  .nine h3 span:after,.nine h3 span:before {
+      content: " ";
+      display: block;
+      border-bottom: 1px solid #ccc;
+      border-top: 1px solid #ccc;
+      height: 5px;
+    background-color:#f8f8f8;
+  }
+  .price4{
+    margin: auto;
+    background-color: #e7e7e7b9;
+    text-align: center;
+    width: fit-content;
+padding: 11px;
+    border-radius: 30%;
+    border: 1px  rgb(180, 158, 158) solid;Box-shadow: 3px 2px 9px 3px rgb(39, 39, 39);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 13px;
+    animation-name: loginbox2;
+animation-duration: 1.4s;
+animation-iteration-count: 1; 
+background: linear-gradient(135deg, rgb(218, 218, 218), #d49cb2);
+font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        /* background:radial-gradient(#d49cb2,rgb(255, 255, 255))  ; */
+font-weight: 400;
+  }
+  .loginBox{
+ 
+    width: 400px;
+    padding: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+margin: auto;
+    /* transform: translate(-50%, -50%); */
+    background: rgba(0,0,0,.5);
+    background-color: rgba(143, 138, 138, 0.73);
+    background-color: rgb(237 237 237 / 73%);
+    background-color: rgb(218, 218, 218);
+    background: linear-gradient(135deg, rgb(218, 218, 218), #d49cb2);
+    box-sizing: border-box;
+    box-shadow: 6px 2px 13px 0px rgba(14, 13, 13, 0.6);    
+    border-radius: 5%;
+border: 1px solid #000;
+border: 1px solid gray ;
+    animation-name: loginbox;
+animation-duration: 2.4s;
+animation-iteration-count: 1; 
+  }
+
+  @keyframes  loginbox2
+  {
+    from {
+      transform: translateY(110vh);
+  
+    }
+  
+    to {
+      transform: translateY(0);
+  
+    }
+  }
+  @keyframes  loginbox
+  {
+    from {
+      transform: translateY(110vh);
+  
+    }
+  
+    to {
+      transform: translateY(0);
+  
+    }
+  }
+ 
+  .loginBox .userBbox {
+  position: relative;
+}
+
+.loginBox .userBox input {
+  width: 100%;
+  /* padding: 10px 0; */
+  font-size: 16px;
+  color: #fff;
+  color:   #3a3636;
+
+  margin-top: 12px;
+  margin-bottom: 38px;
+  border: none;
+  border-bottom: 1px solid #949292;
+  outline: none;
+  background: transparent;
+}
+.loginBox .userBox label {
+  /* top:0;
+  left: 0; */
+  /* padding: 10px 0; */
+  font-size: 18px;
+  color:  #312f2f;
+  margin-top: 11px;
+  pointer-events: none;
+  transition: .5s;
+  font-size: 18px;
+  font-weight: 500;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.loginBox .userBox input:focus  {
+
+  color: #0e0e0e;
+  font-size: 17px;
+  transform: scale(1.07);
+  transition: transform 500ms;
+}
+
+

@@ -1,0 +1,95 @@
+.dad{
+    display: flex;
+margin-top: 15px;
+font-family: Arial, Helvetica, sans-serif;
+}
+.cardk {
+    /* border-radius: 15px !important; */
+    border-top-left-radius: var(--bs-card-inner-border-radius);
+    border-top-right-radius: var(--bs-card-inner-border-radius);
+    width: 100% !important; 
+    aspect-ratio: 0.9;
+
+}
+/* .card-img, .card-img-bottom, .card-img-top {
+} */
+
+.widthh{
+    width: 19.8rem !important;
+    margin-top: 10px  ;
+    text-decoration: none;
+}
+.nine{
+    margin-top: 20px;
+}
+.nine {
+    text-align:center; font-size:50px; text-transform:uppercase; color:#222; letter-spacing:1px;
+    font-family:"Playfair Display", serif; font-weight:400;
+  }
+  .nine span {
+    margin-top: 5px;
+      font-size:15px; color:#444; word-spacing:1px; font-weight:normal; letter-spacing:2px;
+      text-transform: uppercase; font-family:"Raleway", sans-serif; font-weight:500;
+  
+      display: grid;
+      grid-template-columns: 1fr max-content 1fr;
+      grid-template-rows: 27px 0;
+      grid-gap: 20px;
+      align-items: center;
+  }
+  
+  .nine span:after,.nine span:before {
+      content: " ";
+      display: block;
+      border-bottom: 1px solid #ccc;
+      border-top: 1px solid #ccc;
+      height: 5px;
+    background-color:#f8f8f8;
+  }
+  .f{
+    background-color: #f3f0f070;
+    display: flex;
+    justify-content: space-between;
+        flex-wrap: wrap;
+        padding: 15px;
+align-items: center;
+gap: 13px;
+border-top: 1px  rgb(211, 208, 208) solid ;
+      }
+  .search{
+    width: 400px;
+    height: 40px;
+  }
+  .search:focus{
+    outline: #9b1e1e;
+    box-shadow: 1px 0px 1pc rgba(105, 184, 187, 0.575);  }
+    .search2{
+      width: fit-content;
+      height: 40px;
+    }
+    .search2:focus{
+      outline: #9b1e1e;
+      box-shadow: 1px 0px 1pc rgba(105, 184, 187, 0.575);  }
+      .sort{
+        display: flex;
+        text-align: center;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: baseline
+      }
+      .sort select{
+      height: 40px;
+      background-color: #ffffff;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+      }
+      .sort select:focus{
+        color: rgb(0, 0, 0);
+        font-size: 18px;
+        background-color:rgba(105, 184, 187, 0.26);
+      }
+      @media (max-width: 500px) {
+        .search{
+          width: 200px;
+          height: 40px;
+        }
+      }

@@ -1,0 +1,50 @@
+.Aall{
+    margin: auto;
+    margin-top: 20px;
+}
+.Mycard{
+    margin: auto;
+    width: 500px;
+    box-shadow: 5px -6px 12px 1px #cfaeae;
+padding: 10px;
+
+
+}
+.Mycard2{
+    padding: 10px;
+    display: flex;
+flex-direction: column;
+gap: 10px;
+}
+.images{
+    width: 100px;
+    height: 100px;
+}
+.swipers{
+    display: flex;
+    overflow-x: auto;
+    /* flex-wrap: wrap; */
+}
+.sumSwiper{
+    display: flex;
+    flex-direction: column;
+    border: 1px solid black;
+   
+}
+.hh1{
+    text-align: center;
+}
+.status span{
+    color: red;
+}
+@media(max-width:532px){
+
+    .Mycard{
+        margin: auto;
+        width: 400px;
+        box-shadow: 5px -6px 12px 1px #cfaeae;
+    padding: 10px;
+    
+    
+    }
+}

@@ -1,0 +1,32 @@
+
+
+.all{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.name{
+    color: black;
+}
+.cart{
+    
+    margin: auto;
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.hei{
+    height: 70vh !important; 
+    width: 600px !important;
+}
+@media (max-width: 799px) {
+    .sideBar {
+margin: auto;  
+width: 100%;
+margin-bottom: 20px;
+}
+.sideBareInfo{
+    width: 100%;
+}
+  }
