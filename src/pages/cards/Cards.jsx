@@ -17,11 +17,17 @@ function Cards() {
   const [cartProducts, serCartProducts] = useState([]);
   const getData = async () => {
     try {
-      const token = localStorage.getItem("userToken");
-      const { data } = await axios.get(`${import.meta.env.VITE_API_URL}/cart`, {
-        headers: { Authorization: `Tariq__${token}` },
+      // const token = localStorage.getItem("userToken");
+      // const { data } = await axios.get(`${import.meta.env.VITE_API_URL}/cart`, {
+      //   headers: { Authorization: `Tariq__${token}` },
+      // });
+      const token = localStorage.getItem(`userToken`)
+      const {data}= await axios.get(`https://ecommerce-node4.onrender.com/cart`, {
+      headers:{
+        Authorization:`Tariq__${token}`
+      }
       });
-      // console.log(data.products.length);
+      console.log(data.products);
       serCartProducts(data.products);
       // console.log('pro = ',cartProducts);
     } catch (err) {
@@ -30,6 +36,7 @@ function Cards() {
       setLoader(false);
     }
   };
+
 
   const removeItem = async (productId) => {
     // console.log(productId);
@@ -172,12 +179,11 @@ function Cards() {
     }
   };
   const clearCarts = async () => {
-    // console.log(cartNum)
-    // console.log("lvpfh")
+
     try {
       const token = localStorage.getItem(`userToken`);
       const { data } = await axios.patch(
-        `https://ecommerce-node4.vercel.app/cart/clear`,
+        `https://ecommerce-node4.onrender.com/cart/clear`,
         null,
         {
           headers: {

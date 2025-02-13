@@ -151,11 +151,11 @@ function Products() {
             to={`/ProDetails?id=${pro._id} `}
             className={`card  mt-4 bgg ${style.widthh}`}
             key={pro._id}
-            style={{ width: "40rem" }}
+            style={{ width: "40rem"}}
           >
             <img
               src={pro.mainImage.secure_url}
-              className="card-imgf-top yy"
+              className={`card-imgf-top yy  `}
               alt={pro.name}
             />
             <h4> 

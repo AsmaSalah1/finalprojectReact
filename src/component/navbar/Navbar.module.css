@@ -16,9 +16,9 @@ nav{
     /* width: 20px;
     height: 20px; */
 }
-.nav-link .active{
-    /* border-bottom: 2px solid teal !important;  */
-    text-decoration: underline !important;
+.active{
+    border-bottom: 2px solid teal !important; 
+    /* text-decoration: underline !important; */
 }
 .re {
     background-color: rgba(var(--bs-tertiary-bg-rgb), var(--bs-bg-opacity)) !important;

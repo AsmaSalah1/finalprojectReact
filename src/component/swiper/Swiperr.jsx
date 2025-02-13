@@ -105,6 +105,8 @@ centeredSlides={true}
             <img
               src={category.image.secure_url}
               alt="Categories image"
+              style={{ width: "250px", height: "300px" }} 
+
             /></Link>
               {/* <p>{category.name}</p> */}
               

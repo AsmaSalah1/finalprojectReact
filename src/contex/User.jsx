@@ -2,6 +2,7 @@ import { createContext, useContext, useEffect, useState } from "react";
 import { jwtDecode } from "jwt-decode";
 import { Bounce, toast } from "react-toastify";
 import axios from "axios";
+
 export const UserContext = createContext(); //بعملها عشان اعرف الكونتيس
 
 export const useMyContex = () => {
@@ -52,6 +53,7 @@ const UserContextProvider = ({ children }) => {
         cartNum,
         cart1,
         setCart1,
+        // هاي الفاليوز الي رح يبعثها للكومبوننت الابناء 
       }}
     >
       {/*{{}} بحط ثنتين عشان اذا كان عندي اكتر من متغير  */}

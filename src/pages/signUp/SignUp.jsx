@@ -9,7 +9,7 @@ import { useNavigate } from "react-router-dom";
 
 function SignUp() {
   const [loader, setLoader] = useState(false);
-  const navigate = useNavigate();
+  const navigate = useNavigate();//لما يكون عندي event -- معين بستخدمها
   const [errors, setError] = useState([]);
   const [users, setUsers] = useState({
     userName: "",
@@ -34,6 +34,7 @@ function SignUp() {
     //console.log(users);
   };
   const validatrData = async () => {
+    //لانه عندي اوبجيكت يوزر اذا رح ارجع اوبجيكت 
     const RegisterSchema = object({
       userName: string().min(4).max(20).required(),
       email: string().email().required(),
@@ -42,7 +43,8 @@ function SignUp() {
     });
     try {
       //عملية المطابقة بتوخذ وقت
-      await RegisterSchema.validate(users, { abortEarly: false }); //عشان يرجعلي كل الايرورز
+      //بوخذ اليوزر و بمشيه على الشروط الي عندي 
+      await RegisterSchema.validate(users, { abortEarly: false }); // عشان يرجعلي كل الايرورز بحط القيمة فولس
       return true;
     } catch (error) {
       //  console.log("Validation Error",error.errors);
@@ -54,7 +56,6 @@ function SignUp() {
   const handelSubmit = async (e) => {
     e.preventDefault();
     setLoader(true);
-
     const validate = await validatrData();
     //console.log(validate);
     //لما يكون عندي فايل عشان ارسل الداتا للباك لازم اعمل:
@@ -63,7 +64,6 @@ function SignUp() {
     formData.append("email", users.email);
     formData.append("password", users.password);
     formData.append("image", users.image);
-
     //براميتر فيه الداتا الي بدي ارسلهاform data
     try {
       const { data } = await axios.post(

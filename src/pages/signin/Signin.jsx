@@ -168,94 +168,10 @@ function Signin() {
           </form>
         </div>
       </div>
-      {/* <div className="login-box">
-  <h2>Sign Up</h2>
-  <form>
-    <div className="user-box">
-      <input type="text" name required />
-      <label>Username</label>
-    </div>
-    <div className="user-box">
-      <input type="password" name required />
-      <label>Password</label>
-    </div>
-    <a href="#">
-      <span />
-      <span />
-      <span />
-      <span />
-      Submit
-    </a>
-  </form>
-</div> */}
+      
     </>
   );
-  //    const [error,setError]=useState([]);
-  //     const [users,setUsers]=useState({
-  //         userName:'',
-  //         email:'',
-  //         password:'',
-  //         image:''
-  //     });
-  //     const  handelChange=(e)=>{
-  //         const {name,value} = e.target;
-  //         setUsers({
-  //             ...users,
-  //             [name]:value
-  //         });
-  //     };
 
-  //     const handelSubmit= async(e)=>{
-  //         e.preventDefault();
-  //         const validate=await validatrData();
-  // console.log(validate);
-  //         //براميتر فيه الداتا الي بدي ارسلها
-  //         const { data } = await axios.post(`${import.meta.env.VITE_API_URL}/auth/signin`);
-  //         console.log(data);
-  //     }
-
-  //     const validatrData= async()=>{
-
-  //       const signInSchema=object({
-  //           email:string().email().required(),
-  //           password:string().min(8).max(20).required(),
-  //       });
-  //       try{
-  //   //عملية المطابقة بتوخذ وقت
-  //   await signInSchema.validate(users,{abortEarly:false});
-  //   return true;
-  //       }
-  //       catch(error){
-  //           console.log("Validation Error",error.errors);
-  //           setError(error.errors);
-  //           return false;
-  //       }
-
-  //     };
-
-  //   return (
-  //     <>
-
-  //      {error.length>0?error.map(err =>
-  // <div className="alert alert-warning alert-dismissible fade show" role="alert" key={1}>
-  //   <strong>{err}</strong>
-  //   <button type="button" className="btn-close" data-bs-dismiss="alert" aria-label="Close" />
-  // </div>
-  //     ):''}
-
-  //      <form onSubmit={handelSubmit}>
-
-  //         <label>Email</label>
-  //         <input type="email" value={users.email} name="email" onChange={handelChange}/>
-
-  //         <label>Password</label>
-  //         <input type="password" value={users.password} name='password' onChange={handelChange}/>
-
-  //          <button type='submit'>submit</button>
-  //               </form>
-
-  //     </>
-  //   )
 }
 
 export default Signin;

@@ -41,48 +41,75 @@ function ProDetails() {
     setImages(data.product.subImages);
     setLoader(true);
   };
+  // const addToCart = async (productId) => {
+  //   try {
+  //     const token = localStorage.getItem("userToken");
+  //     //setCart1([...cart1,details]);
+  //     const { data } = await axios.post(
+  //       `${import.meta.env.VITE_API_URL}/cart`,
+  //       {
+  //         productId,
+  //       },
+  //       {
+  //         headers: {
+  //           Authorization: `Tariq__${token}`,
+  //         },
+  //       }
+  //     );
+  //     //console.log(data.cart.products.length);
+  //     localStorage.setItem("cartNum", data.cart.products.length);
+  //     setcartNumber(data.cart.products.length);
+  //     // setcartNumber(data.cart.products);
+  //     toast.success("The product has been added successfully", {
+  //       position: "bottom-right",
+  //       autoClose: 5000,
+  //       hideProgressBar: false,
+  //       closeOnClick: true,
+  //       pauseOnHover: true,
+  //       draggable: true,
+  //       progress: undefined,
+  //       theme: "light",
+  //       transition: Bounce,
+  //     });
+  //   } catch (err) {
+  //     if (err.response.data.message == "product already exists") {
+  //       toast.error("product already exists in your cart", {
+  //         position: "bottom-right",
+  //         autoClose: 3000,
+  //         hideProgressBar: false,
+  //         closeOnClick: true,
+  //         // theme: "dark",
+  //       });
+  //     }
+  //   }
+  // };
   const addToCart = async (productId) => {
     try {
       const token = localStorage.getItem("userToken");
-      //setCart1([...cart1,details]);
+      console.log("Sending request to:", `${import.meta.env.VITE_API_URL}/cart`);
+  
       const { data } = await axios.post(
         `${import.meta.env.VITE_API_URL}/cart`,
-        {
-          productId,
-        },
-        {
-          headers: {
-            Authorization: `Tariq__${token}`,
-          },
-        }
+        { productId },
+        { headers: { Authorization: `Tariq__${token}` } }
       );
-      //console.log(data.cart.products.length);
-      localStorage.setItem("cartNum", data.cart.products.length);
-      setcartNumber(data.cart.products.length);
-      // setcartNumber(data.cart.products);
-      toast.success("The product has been added successfully", {
-        position: "bottom-right",
-        autoClose: 5000,
-        hideProgressBar: false,
-        closeOnClick: true,
-        pauseOnHover: true,
-        draggable: true,
-        progress: undefined,
-        theme: "light",
-        transition: Bounce,
-      });
+  
+      console.log("Response data:", data);
+  
     } catch (err) {
-      if (err.response.data.message == "product already exists") {
-        toast.error("product already exists in your cart", {
+      console.error("Error response:", err.response);
+      if (err.response) {
+        toast.error(`Error: ${err.response.status} - ${err.response.data.message}`, {
           position: "bottom-right",
-          autoClose: 3000,
-          hideProgressBar: false,
-          closeOnClick: true,
-          // theme: "dark",
+        });
+      } else {
+        toast.error("Network error, please check your connection", {
+          position: "bottom-right",
         });
       }
     }
   };
+  
   const createMyReview = async (id2) => {
     try {
       //console.log(userReview);
@@ -156,11 +183,19 @@ function ProDetails() {
         modules={[Pagination, Navigation]}
         className={`mySwiper ${Style.mySwiper} `}
       >
-        {images.map((img) => (
+        {/* {images.map((img) => (
           <SwiperSlide className={Style.swiperslide} key={img.public_id}>
             <img className={Style.img2} src={img.secure_url} alt="..." />
           </SwiperSlide>
-        ))}
+        ))} */}
+        {images && images.map((img) => (
+  img?.secure_url && (
+    <SwiperSlide className={Style.swiperslide} key={img.public_id}>
+      <img className={Style.img2} src={img.secure_url} alt="..." />
+    </SwiperSlide>
+  )
+))}
+
       </Swiper>
       <h2 className={Style.addCart2}>{details.price} $ </h2>
 
@@ -223,11 +258,13 @@ function ProDetails() {
                 {" "}
                 <span className="text1">Customer opinion : {rev.comment}</span>
                 <div className="d-flex ">
-                  <img
+                  {/* <img
                     src={rev.createdBy.image.secure_url}
                     // "https://i.imgur.com/AgAC1Is.jpg"
                     width={33}
-                  />
+                  /> */}
+                  <img src={rev.createdBy?.image?.secure_url || "default-image-url.jpg"} width={33} />
+
                   <span className="text2"> {rev.createdBy.userName}</span>
                 </div>
                 <div>

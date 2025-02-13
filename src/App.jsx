@@ -38,7 +38,8 @@ function App() {
   
         {
           path: "/products",
-          element:        
+          element:       
+           
              <Products  />
 
         },
@@ -113,11 +114,14 @@ function App() {
     <>
    
     <UserContextProvider >
-    <RouterProvider router={router} />
+      {/* كل الكومبوننت الي عندي بالاول بروح ع اليوزر كونتيس */}
+    <RouterProvider router={router} />   
+    {/* هاي الي فوق حطيتها لما نزلت الرياكت راوتر دوم -من التوتوريال- */}
 
     </UserContextProvider>
 
       <ToastContainer />
+      {/* هاي عشان المكتبة تبعت الاشعارات */}
 
     </>
   );
